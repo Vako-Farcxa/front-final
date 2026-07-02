@@ -2,8 +2,6 @@
 
 A simple free-to-play game discovery website. Browse games, filter by genre, search by name, save favorites, and open games directly on their official websites.
 
-**Live demo:** _(add your GitHub Pages link here)_
-
 ---
 
 ## About the Project
@@ -183,9 +181,9 @@ All styling: layout, colors, responsive breakpoints, hover effects, burger anima
 
 ## Author
 
-_(Your name)_
+Vasil Partskhaladze
 
-BIT — Front End Development — Final Project
+Front End Development — Final Project
 
 ---
 
