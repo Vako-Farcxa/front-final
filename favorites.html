@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorites - FreeZone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="cookie-banner" id="cookieBanner">
+    <p>We use localStorage to save your favorite games.</p>
+    <button class="btn-cookie" id="cookieAccept">Accept</button>
+  </aside>
+
+  <header class="header" id="mainHeader">
+    <nav class="nav container">
+      <a href="index.html" class="logo">Free<span>Zone</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Browse</a></li>
+        <li><a href="favorites.html" class="active">Favorites</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Your <span>Favorites</span></h1>
+        <p>Games saved in your browser. Click the heart on the browse page to add more.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="loader" id="loader">Loading favorites...</div>
+
+        <div class="error hidden" id="errorState">
+          <p>Failed to load.</p>
+          <button class="btn btn-primary" id="retryBtn">Retry</button>
+        </div>
+
+        <div class="games-grid" id="favoritesGrid"></div>
+
+        <div class="empty hidden" id="emptyFav">
+          <p>No favorites yet.</p>
+          <a href="index.html" class="btn btn-primary">Browse Games</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>2026 FreeZone. Data from <a href="https://www.freetogame.com" target="_blank">FreeToGame</a></p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

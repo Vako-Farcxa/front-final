@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreeZone - Browse Free Games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="cookie-banner" id="cookieBanner">
+    <p>We use localStorage to save your favorite games.</p>
+    <button class="btn-cookie" id="cookieAccept">Accept</button>
+  </aside>
+
+  <header class="header" id="mainHeader">
+    <nav class="nav container">
+      <a href="index.html" class="logo">Free<span>Zone</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Browse</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Find Your Next <span>Free Game</span></h1>
+        <p>Browse free games, save favorites, click Play to visit the game website.</p>
+        <p><strong id="statTotal">-</strong> games available</p>
+      </div>
+    </section>
+
+    <section class="section" id="games">
+      <div class="container">
+        <h2 class="section-title">Browse Games</h2>
+
+        <div class="filters">
+          <button class="filter-btn active" data-genre="all">All</button>
+          <button class="filter-btn" data-genre="Shooter">Shooter</button>
+          <button class="filter-btn" data-genre="MMORPG">MMORPG</button>
+          <button class="filter-btn" data-genre="Strategy">Strategy</button>
+          <button class="filter-btn" data-genre="Battle Royale">Battle Royale</button>
+          <button class="filter-btn" data-genre="Racing">Racing</button>
+          <button class="filter-btn" data-genre="Sports">Sports</button>
+        </div>
+
+        <input type="text" class="search" id="searchInput" placeholder="Search games...">
+
+        <div class="loader" id="loader">Loading games...</div>
+
+        <div class="error hidden" id="errorState">
+          <p>Failed to load. Check your connection.</p>
+          <button class="btn btn-primary" id="retryBtn">Retry</button>
+        </div>
+
+        <div class="games-grid" id="gamesGrid"></div>
+
+        <div class="empty hidden" id="emptyState">
+          <p>No games match your filter.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>2026 FreeZone. Data from <a href="https://www.freetogame.com" target="_blank">FreeToGame</a></p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

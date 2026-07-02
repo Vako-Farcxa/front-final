@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - FreeZone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="cookie-banner" id="cookieBanner">
+    <p>We use localStorage to save your favorite games.</p>
+    <button class="btn-cookie" id="cookieAccept">Accept</button>
+  </aside>
+
+  <header class="header" id="mainHeader">
+    <nav class="nav container">
+      <a href="index.html" class="logo">Free<span>Zone</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Browse</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+      <button class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>About <span>FreeZone</span></h1>
+        <p>A simple website to discover free-to-play games.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-text">
+        <h2 class="section-title">Why this project?</h2>
+        <p>There are many free games online but they are hard to find in one place. FreeZone uses the FreeToGame API to show games, filter by genre, search by name, and save favorites.</p>
+        <ul>
+          <li>Game data loaded with fetch and async/await</li>
+          <li>Filter by genre and search by title</li>
+          <li>Favorites saved in localStorage</li>
+          <li>Play button opens the game website</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>2026 FreeZone. Data from <a href="https://www.freetogame.com" target="_blank">FreeToGame</a></p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
